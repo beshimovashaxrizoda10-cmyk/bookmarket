@@ -3,7 +3,7 @@ const router = express.Router();
 
 const { createBook, getBooks, getSuggestions, toggleLikeBook, addComment, getBookComments, getSellerBooks, getBookById, deleteBook, updateBook } = require('../controllers/bookController');
 const { protect } = require('../middleware/authMiddleware');
-const upload = require('../middlewares/uploadMiddleware');
+const upload = require('../middleware/uploadMiddleware');
 
 router.get('/suggestions', getSuggestions);
 router.get('/', getBooks);
