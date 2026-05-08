@@ -12,7 +12,7 @@ const bookRoutes = require('./routes/bookRoutes');
 const userRoutes = require('./routes/userRoutes');
 const authRoutes = require('./routes/authRoutes');
 const swapRoutes = require('./routes/swapRoutes');
-const notificationRoutes = require('./routes/notificationRoutes');
+//const notificationRoutes = require('./routes/notificationRoutes');
 
 const app = express();
 
@@ -21,7 +21,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api/swap', swapRoutes);
-app.use('/api/notifications', notificationRoutes);
+//app.use('/api/notifications', notificationRoutes);
 
 // --- STATIK FAYLLAR ---
 // Yuklangan rasmlar uchun
