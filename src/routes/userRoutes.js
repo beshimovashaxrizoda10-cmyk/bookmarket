@@ -8,7 +8,7 @@ const {
     getMyLikes, 
     getAllUsers 
 } = require('../controllers/userController');
-const { protect } = require('../middlewares/authMiddleware');
+const { protect } = require('../middleware/authMiddleware');
 
 router.get('/me/network', protect, getNetwork); // OBUNALAR YO'LI
 router.get('/me/likes', protect, getMyLikes);

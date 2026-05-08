@@ -4,7 +4,7 @@ const {
     adminLogin, getDashboardData, getUserFullDetails, 
     adminAdvancedSearch, getAdminBook, updateAdminBook, deleteEverything 
 } = require('../controllers/adminController');
-const { adminProtect } = require('../middlewares/adminAuth');
+const { adminProtect } = require('../middleware/adminAuth');
 
 router.post('/login', adminLogin);
 
